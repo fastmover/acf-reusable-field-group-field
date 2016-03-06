@@ -242,8 +242,8 @@
 				// make sure count of groups continues to go down
 				if ($iterations > 0 && $current_count == count($this->groups)) {
 					// infinite loop in reuseable field groups detected
-					add_action('admin_notices', array($this, 'infinite_loop_message'));
-					return;
+//					add_action('admin_notices', array($this, 'infinite_loop_message'));
+//					return;
 				}
 				$current_count = count($this->groups);
 				foreach ($this->groups as $group_key => $sub_groups) {
